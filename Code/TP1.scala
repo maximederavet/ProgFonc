@@ -29,6 +29,7 @@ def roots(a: Double, b: Double, c: Double): List[Double] = {
 def sumInt1(n: Int): Int =
   if n == 0 then 0
   else n + sumInt1(n - 1)
+  
 def sumInt2(n: Int): Int =
   @annotation.tailrec
     def iter(n: Int, acc: Int): Int =

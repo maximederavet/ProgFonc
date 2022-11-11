@@ -1,0 +1,160 @@
+2022.11.09 15:30:10 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maxime/ProgFonc/.metals/lsp.trace.json or /home/maxime/.cache/metals/lsp.trace.json
+2022.11.09 15:30:16 INFO  logging to file /home/maxime/ProgFonc/.metals/metals.log
+2022.11.09 15:30:16 INFO  Started: Metals version 0.11.9 in workspace '/home/maxime/ProgFonc' for client Visual Studio Code 1.72.2.
+2022.11.09 15:30:39 INFO  time: initialize in 23s
+2022.11.09 15:30:45 WARN  Build server is not auto-connectable.
+2022.11.09 15:30:45 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala
+2022.11.09 15:30:45 WARN  no build tool detected in workspace '/home/maxime/ProgFonc'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.11.09 15:31:08 INFO  no build target found for /home/maxime/ProgFonc/Code/Test.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.11.09 15:50:44 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2.scala
+nov. 09, 2022 3:50:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6
+2022.11.09 15:50:49 WARN  no build target for: /home/maxime/ProgFonc/Code/TP1.scala
+2022.11.09 15:50:54 INFO  time: code lens generation in 3.89s
+nov. 09, 2022 3:53:23 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+nov. 09, 2022 3:53:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+nov. 09, 2022 3:53:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+nov. 09, 2022 3:54:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 44
+2022.11.09 15:55:43 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2.scala
+2022.11.09 16:01:09 WARN  no build target for: /home/maxime/ProgFonc/Code/TP1.scala
+2022.11.09 16:01:57 WARN  no build target for: /home/maxime/ProgFonc/Code/TP3.scala
+2022.11.09 16:02:41 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2test.scala
+2022.11.09 16:02:48 WARN  no build target for: /home/maxime/ProgFonc/Code/TP3.scala
+2022.11.09 16:05:09 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2.scala
+2022.11.09 16:05:11 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2test.scala
+2022.11.11 11:34:07 INFO  shutting down Metals
+2022.11.11 11:39:15 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maxime/ProgFonc/.metals/lsp.trace.json or /home/maxime/.cache/metals/lsp.trace.json[0m
+2022.11.11 11:39:24 INFO  logging to file /home/maxime/ProgFonc/.metals/metals.log[0m
+2022.11.11 11:39:24 INFO  Started: Metals version 0.11.9 in workspace '/home/maxime/ProgFonc' for client Visual Studio Code 1.72.2.[0m
+2022.11.11 11:39:37 INFO  time: initialize in 13s[0m
+2022.11.11 11:39:40 WARN  Build server is not auto-connectable.[0m
+2022.11.11 11:39:40 WARN  no build tool detected in workspace '/home/maxime/ProgFonc'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.11.11 11:39:41 WARN  no build target for: /home/maxime/ProgFonc/Code/cheatList.scala[0m
+2022.11.11 11:39:41 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 11:39:41 WARN  no build target for: /home/maxime/ProgFonc/Code/TP1.scala[0m
+2022.11.11 11:39:41 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2.scala[0m
+2022.11.11 11:40:13 INFO  no build target found for /home/maxime/ProgFonc/Code/TP2.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+2022.11.11 11:40:23 INFO  time: code lens generation in 37s[0m
+2022.11.11 11:40:23 INFO  time: code lens generation in 8.66s[0m
+nov. 11, 2022 4:42:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2022.11.11 16:42:14 INFO  shutting down Metals[0m
+2022.11.11 16:42:55 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maxime/ProgFonc/.metals/lsp.trace.json or /home/maxime/.cache/metals/lsp.trace.json[0m
+2022.11.11 16:43:00 INFO  logging to file /home/maxime/ProgFonc/.metals/metals.log[0m
+2022.11.11 16:43:00 INFO  Started: Metals version 0.11.9 in workspace '/home/maxime/ProgFonc' for client Visual Studio Code 1.72.2.[0m
+2022.11.11 16:43:04 INFO  time: initialize in 4.26s[0m
+2022.11.11 16:43:05 WARN  Build server is not auto-connectable.[0m
+2022.11.11 16:43:05 WARN  no build tool detected in workspace '/home/maxime/ProgFonc'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.11.11 16:43:05 WARN  no build target for: /home/maxime/ProgFonc/Code/TP1.scala[0m
+2022.11.11 16:43:05 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 16:43:05 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2.scala[0m
+2022.11.11 16:43:05 WARN  no build target for: /home/maxime/scala-at-light-speed/src/main/scala/com/rockthejvm/FunctionalProgramming.scala[0m
+2022.11.11 16:43:05 WARN  no build target for: /home/maxime/ProgFonc/Code/cheatList.scala[0m
+2022.11.11 16:43:11 INFO  no build target found for /home/maxime/scala-at-light-speed/src/main/scala/com/rockthejvm/FunctionalProgramming.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+2022.11.11 16:43:18 INFO  time: code lens generation in 10s[0m
+2022.11.11 16:50:38 INFO  shutting down Metals[0m
+2022.11.11 16:56:58 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maxime/ProgFonc/.metals/lsp.trace.json or /home/maxime/.cache/metals/lsp.trace.json[0m
+2022.11.11 16:57:05 INFO  logging to file /home/maxime/ProgFonc/.metals/metals.log[0m
+2022.11.11 16:57:05 INFO  Started: Metals version 0.11.9 in workspace '/home/maxime/ProgFonc' for client Visual Studio Code 1.72.2.[0m
+2022.11.11 16:57:17 INFO  time: initialize in 12s[0m
+2022.11.11 16:57:18 WARN  Build server is not auto-connectable.[0m
+2022.11.11 16:57:18 WARN  no build tool detected in workspace '/home/maxime/ProgFonc'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.11.11 16:57:18 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 16:57:18 WARN  no build target for: /home/maxime/scala-at-light-speed/src/main/scala/com/rockthejvm/FunctionalProgramming.scala[0m
+2022.11.11 16:57:34 INFO  no build target found for /home/maxime/scala-at-light-speed/src/main/scala/com/rockthejvm/FunctionalProgramming.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+2022.11.11 16:57:40 INFO  time: code lens generation in 17s[0m
+2022.11.11 16:57:40 INFO  time: code lens generation in 19s[0m
+2022.11.11 16:57:40 INFO  time: code lens generation in 1.13s[0m
+2022.11.11 16:57:40 INFO  time: code lens generation in 4.49s[0m
+2022.11.11 16:57:40 INFO  time: code lens generation in 8.61s[0m
+2022.11.11 16:57:40 INFO  time: code lens generation in 2.68s[0m
+2022.11.11 16:57:40 INFO  time: code lens generation in 3.83s[0m
+2022.11.11 16:57:42 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+nov. 11, 2022 4:59:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 56
+2022.11.11 16:59:36 WARN  no build target for: /home/maxime/ProgFonc/Code/TP1.scala[0m
+2022.11.11 16:59:47 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:00:14 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+nov. 11, 2022 5:00:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 298
+2022.11.11 17:00:48 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:05:01 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:07:07 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:08:35 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+nov. 11, 2022 5:09:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 669
+2022.11.11 17:09:11 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:09:36 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:10:07 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:10:34 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:11:00 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:11:20 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:13:01 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:13:08 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+2022.11.11 17:13:55 WARN  no build target for: /home/maxime/ProgFonc/Code/Test.scala[0m
+nov. 11, 2022 5:14:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 961
+2022.11.11 17:14:23 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2.scala[0m
+nov. 11, 2022 5:15:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+nov. 11, 2022 5:15:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2022.11.11 17:16:03 WARN  no build target for: /home/maxime/ProgFonc/Code/TP3.scala[0m
+nov. 11, 2022 5:16:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 980
+2022.11.11 17:16:06 WARN  no build target for: /home/maxime/ProgFonc/Code/TP2test.scala[0m
+nov. 11, 2022 5:18:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: Toplevel definition findIndexOfLast is defined in
+  /home/maxime/ProgFonc/Code/TP2.scala
+and also in
+  /home/maxime/ProgFonc/Code/TP2test.scala
+One of these files should be removed from the classpath.
+dotty.tools.dotc.core.TypeError: Toplevel definition findIndexOfLast is defined in
+  /home/maxime/ProgFonc/Code/TP2.scala
+and also in
+  /home/maxime/ProgFonc/Code/TP2test.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2435)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$5(SymDenotations.scala:2399)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2455)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2014)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2065)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:686)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:811)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:703)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:879)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:669)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:653)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1023)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:925)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.BitmapIndexedSetNode.foreach(HashSet.scala:937)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:944)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:925)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1023)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:137)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:195)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:87)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:75)
+	at scala.meta.internal.pc.completions.CompletionProvider.completions(CompletionProvider.scala:63)
+
+nov. 11, 2022 5:19:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1081
+nov. 11, 2022 5:19:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1298
+nov. 11, 2022 5:22:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+nov. 11, 2022 5:22:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
+2022.11.11 17:24:14 WARN  no build target for: /home/maxime/ProgFonc/Code/TP3.scala[0m
+nov. 11, 2022 5:25:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 1982
+nov. 11, 2022 5:38:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2000

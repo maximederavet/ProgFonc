@@ -1,5 +1,5 @@
 //EX3
-def findIndexOfLast[A](arr: Array[A], cond: A => Boolean): Int =
+private def findIndexOfLast[A](arr: Array[A], cond: A => Boolean): Int =
   @annotation.tailrec
   def loop(n: Int): Int =
     if(n < 0) -1
