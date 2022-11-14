@@ -158,3 +158,207 @@ nov. 11, 2022 5:25:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 AVERTISSEMENT: Unmatched cancel notification for request id 1982
 nov. 11, 2022 5:38:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 AVERTISSEMENT: Unmatched cancel notification for request id 2000
+2022.11.11 17:48:03 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+2022.11.11 17:48:24 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.11 17:48:39 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap3.scala[0m
+2022.11.11 17:48:48 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap4.scala[0m
+2022.11.11 17:48:55 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap5.scala[0m
+2022.11.11 17:49:06 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+nov. 11, 2022 5:52:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2105
+2022.11.14 11:05:33 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+nov. 14, 2022 11:05:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2268
+nov. 14, 2022 11:05:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2273
+nov. 14, 2022 11:06:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2364
+nov. 14, 2022 11:06:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2428
+nov. 14, 2022 11:06:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2430
+nov. 14, 2022 11:06:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2510
+nov. 14, 2022 11:06:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2529
+2022.11.14 11:07:06 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+nov. 14, 2022 11:07:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.ArrayIndexOutOfBoundsException: 17
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: 17
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 17
+	at scala.meta.internal.metals.formatting.MultilineString.$anonfun$wasTripleQuoted$1(MultilineString.scala:268)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:190)
+	at scala.meta.internal.metals.formatting.MultilineString.wasTripleQuoted(MultilineString.scala:267)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:438)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:69)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:241)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:250)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:68)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onTypeFormatting$1(MetalsLanguageServer.scala:1570)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+nov. 14, 2022 11:07:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2664
+nov. 14, 2022 11:08:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2783
+2022.11.14 11:09:06 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+nov. 14, 2022 11:10:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2933
+nov. 14, 2022 11:11:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 2975
+2022.11.14 11:11:48 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+2022.11.14 11:12:18 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+2022.11.14 11:13:06 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:14:22 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+nov. 14, 2022 11:14:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 3282
+2022.11.14 11:15:56 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:17:03 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:17:33 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:17:52 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+2022.11.14 11:18:00 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+2022.11.14 11:18:15 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+2022.11.14 11:18:20 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:18:43 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+2022.11.14 11:19:04 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:20:02 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap1.scala[0m
+nov. 14, 2022 11:25:39 AM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: Toplevel definition main is defined in
+  /home/maxime/ProgFonc/Code/slides/chap2.scala
+and also in
+  /home/maxime/ProgFonc/Code/slides/chap1.scala
+One of these files should be removed from the classpath.
+dotty.tools.dotc.core.TypeError: Toplevel definition main is defined in
+  /home/maxime/ProgFonc/Code/slides/chap2.scala
+and also in
+  /home/maxime/ProgFonc/Code/slides/chap1.scala
+One of these files should be removed from the classpath.
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.dropStale$1(SymDenotations.scala:2435)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.recur$5(SymDenotations.scala:2399)
+	at dotty.tools.dotc.core.SymDenotations$PackageClassDenotation.computeMembersNamed(SymDenotations.scala:2455)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.membersNamed(SymDenotations.scala:2014)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2065)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:686)
+	at dotty.tools.dotc.core.Types$Type.goThis$1(Types.scala:811)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:703)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:879)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:669)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:653)
+	at dotty.tools.dotc.core.Types$Type.allMembers$$anonfun$1(Types.scala:1023)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:15)
+	at scala.runtime.function.JProcedure2.apply(JProcedure2.java:10)
+	at dotty.tools.dotc.core.Types$Type.memberDenots$$anonfun$1(Types.scala:925)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.BitmapIndexedSetNode.foreach(HashSet.scala:937)
+	at scala.collection.immutable.HashSet.foreach(HashSet.scala:944)
+	at dotty.tools.dotc.core.Types$Type.memberDenots(Types.scala:925)
+	at dotty.tools.dotc.core.Types$Type.allMembers(Types.scala:1023)
+	at scala.meta.internal.pc.IndexedContext$.accesibleMembers$1(IndexedContext.scala:137)
+	at scala.meta.internal.pc.IndexedContext$.scala$meta$internal$pc$IndexedContext$$$extractNames(IndexedContext.scala:195)
+	at scala.meta.internal.pc.IndexedContext$LazyWrapper.<init>(IndexedContext.scala:87)
+	at scala.meta.internal.pc.IndexedContext$.apply(IndexedContext.scala:75)
+	at scala.meta.internal.pc.completions.CompletionProvider.completions(CompletionProvider.scala:63)
+
+nov. 14, 2022 11:27:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 4347
+nov. 14, 2022 11:28:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 4726
+nov. 14, 2022 11:30:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5117
+2022.11.14 11:30:17 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:30:39 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:31:14 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:32:13 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+nov. 14, 2022 11:33:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 5555
+2022.11.14 11:34:50 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:35:00 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+nov. 14, 2022 11:35:25 AM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.14 11:35:25 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:35:35 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:38:52 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:39:01 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+nov. 14, 2022 11:40:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6547
+2022.11.14 11:40:52 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+nov. 14, 2022 11:41:42 AM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+nov. 14, 2022 11:42:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 6980
+2022.11.14 11:42:56 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:43:59 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:44:03 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:44:24 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:47:32 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:50:03 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:51:37 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
+2022.11.14 11:53:23 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap2.scala[0m
