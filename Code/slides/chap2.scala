@@ -1,22 +1,24 @@
 //Le code de la factorielle du chap1 n'est pas une récursion terminale. Transformons-le
 object FactorialModule:
-    def fac(n: Int): Int =
+    def fac(n: Int): Int = {
 
         @annotation.tailrec  //Si une fonction est de récursivité terminale, le développeur toi le préciser pour que le compilateur puisse optimiser le code
         def iter(n: Int, acc: Int): Int =
             if(n == 0) acc
             else iter(n-1, n*acc)
     
-    iter(n, 1)
+        iter(n, 1)
+    }
 
     private def formatFac(n: Int) = { //Private n'est pas important pour ce cours-ci 
-        val messsage = "The ffactorial of %d is %d"
+        val message: String = "The factorial of %d is %d"
         message.format(n, fac(n))
     }
 
     def main(args: Array[String]): Unit =
         println(formatFac(5))
 
+end FactorialModule
 
 object MathModule: 
 
@@ -104,3 +106,63 @@ val plus1: Int => Int = HOModule$$$Lambda$1710/0x000000080115d7c8@1368ed98
 scala> plus1(5)
 val res11: Int = 6
 */
+
+
+
+//Curying and uncurying 
+def mul(x: Int, y: Int) = x * y 
+def cmul(x: Int)(y: Int) = x * y
+
+
+
+/*
+Algebraic Data Types 
+*/
+object List:
+    enum List[+A]: //+A veut dire que A est un covariant de List
+        case Nil
+        case Cons(head: A, tail: List[A])
+
+    def apply[A](as: A*): List[A] =
+        if(as.isEmpty) Nil
+        else Cons(as.head, apply(as.tail: _*))
+
+    def product(doubles: List[Double]): Double =
+        doubles match
+            case Nil => 1
+            case Cons(0.0, _) => 0.0
+            case Cons(first, rest) => first* product(rest)
+
+
+    def append[A](l1: List[A], l2: List[A]): List[A] = l1 match
+        case Nil => l2
+        case Cons(h, t) => Cons(h, append(t, l2))
+
+    def allButLast[A](l: List[A]): List[A] = l match
+        case Nil => Nil // We can argue over this :-)
+        case Cons(_, Nil) => Nil
+        case Cons(h, t) => Cons(h, allButLast(t))
+
+    def sum(integers: List[Int]):Int = integers match
+        case Nil =>0
+        case Cons(first, rest)=> first + sum(rest)
+
+    def foldRight[A,B](as: List[A], z: B)(f: (A,B)=>B):B = as match
+        case Nil => z
+        case Cons(h,t)=> f(h, foldRight(t,z)(f))
+
+    def product2(doubles: List[Double]) =
+        foldRight(doubles, 1.0)(_*_)
+
+    def sum2(integers: List[Int]) =
+        foldRight(integers, 0)(_+_)
+    
+end List
+
+object BinaryTree:
+    enum Tree[+A]
+        case Leaf(value: A)
+        case Branch(left: Tree[A], right: Tree[A])
+        def size: Int = this match
+            case Leaf(_) => 1
+            case Branch(l, r) => 1 + l.size + r.size
