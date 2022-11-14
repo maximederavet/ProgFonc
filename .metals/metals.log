@@ -489,3 +489,14 @@ nov. 14, 2022 2:16:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint noti
 INFOS: Unsupported notification method: $/setTrace
 nov. 14, 2022 2:17:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 AVERTISSEMENT: Unmatched cancel notification for request id 1555
+2022.11.14 14:21:11 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap3.scala[0m
+2022.11.14 14:31:36 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/maxime/ProgFonc/.metals/lsp.trace.json or /home/maxime/.cache/metals/lsp.trace.json
+2022.11.14 14:31:44 INFO  logging to file /home/maxime/ProgFonc/.metals/metals.log
+2022.11.14 14:31:44 INFO  Started: Metals version 0.11.9 in workspace '/home/maxime/ProgFonc' for client Visual Studio Code 1.72.2.
+2022.11.14 14:32:03 INFO  time: initialize in 19s
+2022.11.14 14:32:05 WARN  Build server is not auto-connectable.
+2022.11.14 14:32:05 WARN  no build tool detected in workspace '/home/maxime/ProgFonc'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.11.14 14:32:05 WARN  no build target for: /home/maxime/ProgFonc/Code/slides/chap3.scala
+2022.11.14 14:32:20 INFO  no build target found for /home/maxime/ProgFonc/Code/slides/chap3.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.11.14 14:32:33 INFO  time: code lens generation in 27s
+2022.11.14 14:32:51 INFO  shutting down Metals
