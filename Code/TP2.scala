@@ -1,5 +1,9 @@
 //EX3
-private def findIndexOfLast[A](arr: Array[A], cond: A => Boolean): Int =
+/*
+scala> findIndexOfLast(Array(1,2,3,4,2,3,2), _==3)
+val res0: Int = 5
+*/
+def findIndexOfLast[A](arr: Array[A], cond: A => Boolean): Int =
   @annotation.tailrec
   def loop(n: Int): Int =
     if(n < 0) -1
@@ -9,6 +13,10 @@ private def findIndexOfLast[A](arr: Array[A], cond: A => Boolean): Int =
 
 
 //EX4
+/*
+scala> isSorted(Array(1,2,3,4), (x,y)=> x<y)
+val res3: Boolean = true
+*/
 def isSorted[A](as: Array[A], comp: (A,A) => Boolean): Boolean = {
   @annotation.tailrec
   def helper(n: Int): Boolean = {
