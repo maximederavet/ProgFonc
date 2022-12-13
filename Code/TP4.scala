@@ -121,6 +121,8 @@ object LTree:
             LBranch(f(l.value, r.value), l, r
       
       )
+
+
 import LTree._
 
 
