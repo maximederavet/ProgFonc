@@ -71,9 +71,10 @@ val res10: List[Int] = Cons(1,Cons(2,Cons(3,Cons(4,Cons(1,Cons(2,Cons(3,Cons(4,N
 enum Tree[+A]:
     case Leaf(value: A)
     case Branch(left: Tree[A], right: Tree[A])
-
+/*
 object tree: 
     import Tree._
+    import List._
     
     def size: Int = this match 
         case Leaf(_) => 1
@@ -99,3 +100,5 @@ object tree:
         
     def map2[A,B](f: A => B): Tree[B] =
         fold(a => Leaf(f(a)), Branch(_, _))
+
+        */
