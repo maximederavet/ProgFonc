@@ -2,7 +2,7 @@
 object FactorialModule:
     def fac(n: Int): Int = {
 
-        @annotation.tailrec  //Si une fonction est de récursivité terminale, le développeur toi le préciser pour que le compilateur puisse optimiser le code
+        @annotation.tailrec  //Si une fonction est de récursivité terminale, le développeur doit le préciser pour que le compilateur puisse optimiser le code
         def iter(n: Int, acc: Int): Int =
             if(n == 0) acc
             else iter(n-1, n*acc)
