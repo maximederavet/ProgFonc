@@ -5,6 +5,7 @@ enum List[+A]:
     case Cons(head: A, tail: List[A])
 
 object List:
+
     def foldRight[A,B](l: List[A], z: B, f: (A,B)=>B): B = l match
         case Nil => z
         case Cons(h, t) => f(h, foldRight(t, z, f))

@@ -87,19 +87,6 @@ object TP2{
 
 	val result = findIndexOfLast(numbers, isEven)	
 }
-enum ReverseListExercise[+A]{
-	case Nil
-	case Cons(head: A, tail: List[A])
-}
 
 
-object ReverseListExercise {
-	def reverseList[A](list: List[A]): List[A] =  {
-		case Nil => Nil
-		case Cons(h, t) => Cons( reverseList(list.tail) , List(list.head))
-	}
 
-	val originalList = List(1, 2, 3, 4, 5)
-	val reversedList = reverseList(originalList)
-	println(reversedList)  // Should print: List(5, 4, 3, 2, 1)
-}
