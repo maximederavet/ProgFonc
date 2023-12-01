@@ -1,92 +1,47 @@
-object FactorialModule {
-
-
-	def fac(n: Int): Int = {
-		return if(n == 0) 1 else n * fac(n-1)
-	}
-
-	def fac2(n: Int): Int = {
-		@annotation.tailrec
-		def loop(n: Int, acc: Int): Int = {
-			if(n == 0) acc
-			else loop(n-1, n*acc)
-		}
-		loop(n, 1)
-	}
-}
-
 /*
-Exerices given by chatgpt
+* Mock-up test 1
 */
-object Sum {
 
-	def sumTo20(): Int = {
+//$ Exercise 1
 
-		@annotation.tailrec
-		def sum(n: Int, acc: Int): Int ={
-			if(n == 20) acc+n
-			else sum(n+2, acc+n)
-		}
+case class Patient(name: String, height: Double, weight: Double)
 
-		sum(0, 0)
-		
-	}
+val patients = List(
+  Patient("a", 1.50, 30.0),
+  Patient("b", 1.50, 40.0),
+  Patient("c", 1.50, 50.0),
+  Patient("d", 1.50, 60.0)
+)
+
+// ! We access elements of a list using parentheses: patients(1) == patient b
+
+def BMI(mass: Double, height: Double): Double = mass / (height * height)
+
+def category(patient: Patient): String = {
+  val bmi = BMI(patient.weight, patient.height)
+
+  def categoryMatch(bmi: Double): String = {
+    if (bmi < 18.5) "underweight"
+    else if (bmi < 25 && bmi >= 18.5) "normal"
+    else if (bmi >= 25) "overweight"
+    else "Not found"
+  }
+
+  categoryMatch(bmi)
 }
 
-object Factorial2 {
+val patientsCategory = patients.map(category)
 
-	def factorial(n: Int): Int ={
-		@annotation.tailrec
-		def loop(n: Int, acc: Int): Int = {
-			if (n == 0) acc
-			else loop(n-1, acc*n)
-		}
+// OK
 
-		loop(n, 1);
-	}
+// $ Exercise 2:
 
+def processData(patients: List[Patient]): List[(String, Double)] = {
+
+  def loop(i: Int, result: List[(String, Double)]): List[(String, Double)] =
+    if (i < patients.length)
+      loop(i + 1, result :+ (patients(i).name, BMI(patients(i).weight, patients(i).height)))
+    else result
+
+  loop(0, Nil)
 }
-
-
-object Convertion {
-
-	val celsiusTemperatures = List(0.0, 20.0, 37.0, 100.0)
-	val FahrenheitTemperatures = convert(celsiusTemperatures, celsiusToFahrenheit)
-	def celsiusToFahrenheit(degreeC: Double): Double = {
-		(degreeC *9/5)+32
-	}
-
-
-
-	def convert[A,B]( numbers: List[A], convertionRate: A => B ) : List[B] ={
-		numbers.map(convertionRate)
-	}
-
-	val EurosInt = List(1,4,10,100,25)
-	val DollarsList = convert(EurosInt, intEuroToDollars);
-	def intEuroToDollars(n: Int): Double = n*1.18; 
-	
-
-}
-
-
-object TP2{
-	def findIndexOfLast[A](arr : Array[A], cond: A=>Boolean): Int = {
-		def loop(i: Int): Int = {
-			if(i <= 0) return -1 //Renvoyer -1 si on arrive à la fin de la liste
-			if(cond(arr(i-1))) i-1
-			else loop(i-1)
-
-		}
-
-		loop(arr.length)
-
-	}
-	def isEven(n: Int ): Boolean = (n%2)==0;
-	val numbers = Array.range(1,11,1)
-
-	val result = findIndexOfLast(numbers, isEven)	
-}
-
-
-
