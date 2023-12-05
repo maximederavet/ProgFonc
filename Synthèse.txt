@@ -1,0 +1,67 @@
+Récursivité Structurelle : 
+
+  1)  Base de la récursion : Un cas de base qui ne nécessite pas de récursion, souvent pour des structures vides ou des éléments unitaires.
+
+  2)  Étape récursive : La fonction s'appelle elle-même, mais sur une sous-partie de la structure, typiquement en enlevant un élément d'une liste ou en visitant un sous-arbre.
+
+  3)  Simplicité et sécurité : Chaque appel récursif se rapproche du cas de base, évitant ainsi les boucles infinies. La récursion structurelle garantit que la fonction opère correctement sur la structure de données, respectant sa forme.
+
+
+Récursivité Structurelle Complète : 
+
+  1)  Traitement intégral : Chaque composant de la structure de données (comme chaque nœud d'un arbre) doit être traité par la fonction récursive.
+
+  2)  Respect de la structure : La fonction doit maintenir la structure originale de la donnée, traitant chaque sous-élément de manière appropriée.
+
+  3)  Cas de base : Pour chaque type de sous-structure ou élément, un cas de base correspondant est défini, assurant que la récursion se termine correctement.
+
+  4)  Décomposition et reconstruction : La structure est décomposée en ses composants, traitée récursivement, puis reconstruite.
+
+
+Points Communs
+
+    Récursivité : Les deux impliquent des fonctions qui s'appellent elles-mêmes.
+
+    Structure de Données : Elles traitent des structures de données complexes (comme les listes ou les arbres) en se basant sur leur structure inhérente.
+
+    Cas de Base : Les deux nécessitent des cas de base pour éviter la récursion infinie.
+
+    Immutabilité : Elles s'alignent sur le principe de l'immutabilité des données, central en programmation fonctionnelle.
+
+    Pattern Matching : Scala utilise souvent la correspondance de motifs pour faciliter ces formes de récursion.
+
+Différences
+
+    Étendue de Traitement :
+        Récursion Structurelle : Se concentre sur une partie de la structure à chaque étape, par exemple, traiter le 'head' d'une liste et récursivement le 'tail'.
+        Récursion Structurelle Complète : Nécessite le traitement de chaque partie de la structure de données. Dans un arbre, par exemple, cela signifierait traiter chaque nœud.
+
+    Complexité :
+        Récursion Structurelle : Souvent plus simple, car elle traite des structures linéaires ou semi-linéaires comme les listes.
+        Récursion Structurelle Complète : Peut être plus complexe car elle doit gérer des structures de données plus complexes avec plusieurs sous-structures.
+
+    Application :
+        Récursion Structurelle : Plus courante pour des opérations simples comme le calcul de somme dans une liste.
+        Récursion Structurelle Complète : Utilisée pour des opérations plus complexes nécessitant un traitement exhaustif de la structure, comme transformer chaque nœud d'un arbre.
+
+
+
+Fonction Totale : 
+A total function in functional programming is a function that is defined for all possible inputs of its type. This means it will return a valid output for every input, without exceptions or errors, ensuring predictability and reliability in its behavior. In contrast, a partial function may not provide a result for some inputs, potentially leading to runtime errors. Total functions are crucial in functional programming for maintaining robustness and correctness.
+
+
+
+Currying : 
+Currying in functional programming is the process of transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument. In Scala, it's implemented by defining function parameters in separate parameter lists.
+
+def add(a: Int)(b: Int): Int = a + b
+
+val addFive = add(5) _ // creates a new function that adds 5 to its argument
+val result = addFive(10) // result is 15
+
+
+Benefits of Currying:
+
+    Partial Application: You can create new functions by fixing some parameters. It leads to more reusable and modular code.
+    Cleaner Code: It allows for more readable and concise code, especially when dealing with higher-order functions.
+    Better Function Composition: Currying enables easier composition of functions, an essential aspect of functional programming.

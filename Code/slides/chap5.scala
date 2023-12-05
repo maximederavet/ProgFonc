@@ -1,8 +1,9 @@
 
-//Call by value
+//Call by value or strict evaluation
+//? Une évalutaion au passage dans la fonction
 def test(x: Int): Int = 
     println("One")
-    val y = x+x
+    val y = x + x
     println("Two")
     y
 
@@ -18,7 +19,8 @@ val res0: Int = 2
 ///Call by name
 def test2(x: => Int): Int =
     println("One")
-    val y = x+x
+	 //? deux évaluation lors de l'utilisation de x
+    val y = x + x
     println("Two")
     y
 
@@ -32,10 +34,12 @@ val res1: Int = 2
 */
 
 //Call by need 1
+//? Une seule évaluation de x au passage 
 def test3(x: Int): Int = 
     println("One")
     lazy val y = { println("Foo"); x + x }
     println("two")
+	 //? y N'est évaluer que ici à son utilisation et non à sa déclaration
     y
 
 /*
@@ -48,11 +52,14 @@ val res2: Int = 2
 */
 
 //Call by need 2
+//? pareil, x n'est évalué que au passage
 def test4(x: Int): Int = 
     println("One")
     lazy val y = { println("Foo"); x + x }
     println("two")
+	 //? est évalué à sa première utilisation, mais pas la deuxième
     val a = y+1
+	 //Ici la valeur de y est retenue, => on n'a qu'une seule fois foo, malgrè deux utilisations
     val b = y+1
     a + b
     
@@ -69,8 +76,10 @@ val res2: Int = 6
 //Call by need 3
 def test5(x: => Int): Int = 
     println("One")
+	 //? Ici les x ne seront pas évalué car y n'est pas évalué à la déclaration
     lazy val y = x + x
     println("two")
+	 //? y est évalué uniquement ici, ce qui entraine 2 évaluation de x
     y
 
 /*
