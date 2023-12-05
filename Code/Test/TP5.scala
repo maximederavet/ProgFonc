@@ -1,42 +1,39 @@
+/*
+ * Exception Handling : TP5
+ */
+import Option._
+
+ // EXercice 1 
 enum Tree[+A]:
-	case Leaf(value: A)
+	case Leaf(label: A)
 	case Branch(left: Tree[A], right: Tree[A])
 
-object Tree: 
-	def size[A](t: Tree[A]): Int = t match{
-		case Leaf(_) => 1
-		case Branch(l , r) => 1 + size(l) + size(r)
-	}
-	/*
-	! Lorsqu'on utilise l'extension, on ne répète pas l'input dans la signature de la fonction
-	! Cela crée automatiquement des méthodes qu'on appelle avec obj.meth
-	*/
-	extension (t: Tree[Int])
+object Tree:
+	def size[A](t: Tree[A]): Int = t match
+	case Leaf(_) => 1
+	case Branch(l, r) => size(l) + size(r) + 1
 
-		/*
-		$ Cette fpnction est totale, car il y a au moins un int dans l'arbre
-		*/
-		def biggestInt: Int = t match{
-			case Leaf(l) => l
-			case Branch(l, r) => 
-				if (l.biggestInt>= r.biggestInt) l.biggestInt
-				else r.biggestInt
-		}
+	def biggestInt(tree: Tree[Int]): Int = tree match
+		// Cette fonction est totale car elle retournera tjrs qqch pour tous les Int. 
+		case Leaf(v) => v
+		case Branch(l , r) => biggestInt(l).max(biggestInt(r))
 
-		// $ Cette fonction n'est pas totale, car il n'y a pas forcément du positif dans l'arbre
-		def firstPositive: Option[Int] = t match {
-			case Leaf(i) => if i > 0 then Some(i) else None
-			case Branch(l, r) => l.firstPositive orElse r.firstPositive
-		}
 
-	extension (t: Tree[String])
-		// $ Cette focntion est totale car l'arbre contien au moins une string 
-		def esrever: Tree[String] = t match {
-			case Leaf(s) => Leaf(s.reverse)
-			case Branch(l, r) => Branch(l.esrever, r.esrever)
-		}
+
+	def firstPositive(tree: Tree[Int]): Option[Int] = tree match //! Attention au type de retour Option[Int] et pas Int
+
+		case Leaf(v) => if v>0 then Some(v) else None //! Attention ici , si v plus grand que 0 alors la valeur, sinon rien
+
+		case Branch(l , r) =>  firstPositive(l) orElse firstPositive(r)  //! Pareil qu'au dessus, soit l si il y a qqch, orElse r
+		
+		// Not total function since in the instance of an all negative tree, there could be no value to return
+		// Not total = Partial function => Need Excpetion Handling
+
+
+
+
 
 import Tree._
-val ti = Branch(Branch(Leaf(1), Leaf(2)), Branch(Leaf(3), Leaf(4)))
-val ts = Branch(Branch(Leaf("01"), Leaf("02")), Branch(Leaf("03"), Leaf("04")))
+val ti = Branch(Branch(Leaf(1),Leaf(2)),Branch(Leaf(3),Leaf(4)))
+val ts = Branch(Branch(Leaf("01"),Leaf("02")),Branch(Leaf("03"),Leaf("04")))
 
