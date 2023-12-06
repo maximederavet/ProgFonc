@@ -185,4 +185,55 @@ def myifelseifelse[A](t1: Boolean, i: => A, t2: => Boolean, ei: => A, e: => A): 
 
 	//TODO understand this shit
 
-//EX5 //TODO 
+//EX5 
+
+//! The main difference between Flux and List is that the evaluation in Flux is Lazy
+//! Which means that the elements are only evaluated once they are accessed
+//! As for lists, the elements are evaluated at the declaration
+
+import Flux.*
+enum Flux[+A]:
+	case Empty
+	case Cons(h: () => A, t: () => Flux[A])
+	//! Notice how the declaration is () => A and not A
+
+	def headOption: Option[A] = this match
+		case Empty => None
+		case Cons(h, t) => Some(h())
+
+	def toList: List[A] = this match
+		case Cons(h,t) => h() :: t().toList
+		case Empty => Nil
+
+	def take(n: Int): Flux[A] = this match
+		case Cons(h, t) if n > 1 => cons(h(), t().take(n - 1))
+		case Cons(h, _) if n == 1 => cons(h(), empty)
+		case _ => empty
+
+	def filter(f: A => Boolean): Flux[A] = this match
+		case Cons(h, t) if f(h()) => cons(h(), t().filter(f))
+		case Cons(_, t) => t().filter(f)
+		case _ => empty
+
+	def map[B](f: A => B): Flux[B] = this match
+		case Cons(h, t) => cons(f(h()), t().map(f))
+		case _ => empty
+
+
+	def takeWhile(p: A => Boolean): Flux[A] = ???
+	def exists(p: A => Boolean): Boolean = ???
+	def foldRight[B](acc: => B)(f: (A, => B) => B): B = ???
+
+	
+object Flux:
+	def cons[A](hd: => A, tl: => Flux[A]): Flux[A] =
+		lazy val head = hd
+		lazy val tail = tl
+		Cons(() => head, () => tail)
+
+	def empty[A]: Flux[A] = Empty
+
+	def apply[A](as: A*): Flux[A] =
+		if (as.isEmpty) empty
+		else cons(as.head, apply(as.tail*))
+
