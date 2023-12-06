@@ -65,3 +65,11 @@ Benefits of Currying:
     Partial Application: You can create new functions by fixing some parameters. It leads to more reusable and modular code.
     Cleaner Code: It allows for more readable and concise code, especially when dealing with higher-order functions.
     Better Function Composition: Currying enables easier composition of functions, an essential aspect of functional programming.
+
+
+
+Un monoïde en programmation fonctionnelle est une structure algébrique composée de deux éléments clés :
+
+    Opération Binaire Associative : Une fonction qui prend deux éléments du type et retourne un nouvel élément du même type.
+
+	 Élément Neutre : Un élément spécifique du type qui, lorsqu'il est combiné avec n'importe quel autre élément du type via l'opération binaire, laisse cet autre élément inchangé.
