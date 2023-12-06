@@ -201,28 +201,41 @@ enum Flux[+A]:
 		case Empty => None
 		case Cons(h, t) => Some(h())
 
+	//! Notice that we use h() and t() to access their values (and not h and t )
 	def toList: List[A] = this match
 		case Cons(h,t) => h() :: t().toList
 		case Empty => Nil
 
-	def take(n: Int): Flux[A] = this match
-		case Cons(h, t) if n > 1 => cons(h(), t().take(n - 1))
+	def take(n: Int): Flux[A] = this match //Takes the first n elements from a list
+		case Cons(h, t) if n > 1 => cons(h(), t().take(n - 1))   //! We use cons defined in the companion object (and not Cons)
 		case Cons(h, _) if n == 1 => cons(h(), empty)
-		case _ => empty
+		case _ => empty				//! We use empty, defined in the companion object  (and not Empty)
 
-	def filter(f: A => Boolean): Flux[A] = this match
+	def filter(f: A => Boolean): Flux[A] = this match //Filter values respecting a condition
 		case Cons(h, t) if f(h()) => cons(h(), t().filter(f))
 		case Cons(_, t) => t().filter(f)
 		case _ => empty
 
-	def map[B](f: A => B): Flux[B] = this match
-		case Cons(h, t) => cons(f(h()), t().map(f))
+	def map[B](f: A => B): Flux[B] = this match //Applies f to elements
+		case Cons(h, t) => cons(f(h()), t().map(f)) 
 		case _ => empty
 
 
-	def takeWhile(p: A => Boolean): Flux[A] = ???
-	def exists(p: A => Boolean): Boolean = ???
-	def foldRight[B](acc: => B)(f: (A, => B) => B): B = ???
+	def takeWhile(p: A => Boolean): Flux[A] = this match
+		case Cons(h, t) if p(h()) => cons(h(), t().takeWhile(p))
+		case _ => empty
+
+
+	def exists(p: A => Boolean): Boolean = this match
+		case Cons(h, t) if p(h()) => true
+		case Cons(h, t) if !p(h()) => t.exists(p)
+		case _ => false //! Attention au type de retour (pas empty bêtement)
+		
+
+	def foldRight[B](z: => B)(op: (A, => B) => B): B = this match {
+		case Cons(h, t) => op(h(), t().foldRight(z)(op))
+		case _ => z
+	}
 
 	
 object Flux:
