@@ -56,4 +56,12 @@ enum Tree[+A]:
 // Exception handling //TODO
 
 
+enum Either[+E, +A]:
+	case Left(get: E)
+	case Right(get: A)
 
+
+//! Correct !! GG
+def max(list: List[Int]): Either[String, Int] = 
+	if (list.isEmpty) Left("List is empty")
+	else Right(list.max)

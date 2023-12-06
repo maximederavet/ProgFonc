@@ -158,9 +158,31 @@ def myIf[A](test: Boolean, onIf: => A, onElse:  => A ): A =
 
 //! Currying
 def myIf2[A](test: Boolean)(onIf: => A)(onElse: => A): A = 
+	if test then onIf else onElse
+
+/*
+scala> myif(3 > 5, 2 / 0, 5)
+val res0: Int = 5
+scala> myif2(3 > 5)(2 / 0)(5)
+val res1: Int = 5
+*/
+
+/*
+ * Motivation ? Nous pouvons utiliser le currying pour fixer certains paramètres 
+ * Nous créons ainsi une application partielle
+ */
+
+val partial = myIf2(2 > 1) _ 
+val result = partial("True Case")("False Case")
 
 
 
+//Exercice 3 : myIfElse
 
+//EX3
+def myifelseifelse[A](t1: Boolean, i: => A, t2: => Boolean, ei: => A, e: => A): A =
+    myif(t1, i, myif(t2, ei, e)) 
 
+	//TODO understand this shit
 
+//EX5 //TODO 
