@@ -1,7 +1,4 @@
 def findIndexOfLast[A](arr: Array[A], cond: A => Boolean): Int = {
-	
-	
-
 	def aux(index: Int): Int = {
 		if (index < 0) -1
 		else if (cond(arr(index))) index+1
@@ -9,7 +6,6 @@ def findIndexOfLast[A](arr: Array[A], cond: A => Boolean): Int = {
 	}
 
 	return aux(arr.length-1)
-
 }
 
 val  array1 = Array(1,2,3,4,5,6,7,8,9,10)
